@@ -34,13 +34,62 @@
 
 # Sequence Types : list, tuple, range -
 
-# 1.List -
+## 1.List -
 - A list is collection which contains heterogenous data elements that defined by sqaure bracket [] with the properties:
     - a) Ordered
     - b) Mutable
     - c) Allow Duplicates values
 
+#### Create list -
+     my_list = [1, 2, 3, 4, 5]
 
+#### Accessing List Elements -
+     print(my_list[0])  # Output: 1
+     print(my_list[2])  # Output: 3
+
+
+- You can access elements in a list by using an index. The index starts at 0 for the first element.
+
+#### Modifying List Elements -
+     my_list[2] = 10
+     print(my_list)  # Output: [1, 2, 10, 4, 5]
+
+- You can modify elements by referencing their index and assigning a new value.
+
+#### Adding Elements -
+     my_list.append(6)
+     print(my_list)  # Output: [1, 2, 10, 4, 5, 6]
+- Append: Adds an element to the end of the list.
+
+#### Insert: Inserts an element at a specific index.
+     my_list.insert(2, 7)  # Insert 7 at index 2
+     print(my_list)  # Output: [1, 2, 7, 10, 4, 5, 6]
+#### Removing Elements- Removes the first occurrence of the specified value.
+     my_list.remove(10)
+     print(my_list)  # Output: [1, 2, 7, 4, 5, 6]
+
+#### List Slicing - You can slice a list to get a sublist.
+     sublist = my_list[1:4]  # Elements from index 1 to 3
+     print(sublist)  # Output: [2, 7, 5]
+
+#### Length of List -
+     length = len(my_list)
+     print(length)  # Output: 5
+- You can use the len() function to get the number of elements in a list.
+
+#### Checking if an Item Exists in a List
+     if 7 in my_list:
+         print("7 is in the list")
+     else:
+         print("7 is not in the list")
+    
+#### List with Mixed Data Types -
+     mixed_list = [1, "hello", 3.14, True, [5, 6]]
+     print(mixed_list)
+
+
+# Tuple -
+- 
 
 
 
