@@ -150,10 +150,91 @@ Although tuples are immutable, they have some built-in methods:
      for i in range(1, 10, 2):
          print(i)
 
-# Mapping Type: dict -
+# Mapping Type: dictionary -
+- Dictionary is a collection of unordered, changeable, and indexed data.
+- It is composed of key-value pairs, where each key is unique, and the value can be of any data type.
+
+#### Creating a Dictionary -
+     person = {
+         "name": "John",
+         "age": 30,
+         "city": "New York"
+     }
+     
+                            OR
+                            
+     person = dict(name="Alice", age=25, city="Los Angeles")
+
+#### Accessing Values in a Dictionary -
+     print(person["name"])  # Output: John
+     print(person["age"])   # Output: 30
+    
+#### Adding or Modifying Key-Value Pairs -
+     person["job"] = "Engineer"
+     person["age"] = 31
+
+#### Removing Key-Value Pairs -
+    # Using del
+    del person["city"]
+    
+    # Using pop()
+    age = person.pop("age")
+    print(age)  # Output: 31
+
+#### Checking if a Key Exists -
+     if "name" in person:
+        print("Name exists in the dictionary.")
+
+## Methods in Dictionary -
+- keys(): Returns a list of all the keys.
+- values(): Returns a list of all the values.
+- items(): Returns a list of tuples, where each tuple is a key-value pair.
+
+#### Example -
+    print(person.keys())   # Output: dict_keys(['name', 'job'])
+    print(person.values()) # Output: dict_values(['John', 'Engineer'])
+    print(person.items())  # Output: dict_items([('name', 'John'), ('job', 'Engineer')])
+
+## Example of Dictionary:
+    person = {
+        "name": "John",
+        "age": 30,
+        "city": "New York"
+    }
+    
+    # Accessing values
+    print(person["name"])  # Output: John
+    
+    # Adding a new key-value pair
+    person["job"] = "Engineer"
+    
+    # Modifying an existing value
+    person["age"] = 31
+    
+    # Checking if a key exists
+    if "city" in person:
+        print("City is present.")
+    
+    # Removing a key-value pair
+    del person["city"]
+    
+    # Looping through the dictionary
+    for key, value in person.items():
+        print(key, value)
+
+    # Output:
+    # name John
+    # age 31
+    # job Engineer
+    
+# Set Types-
+## Set -
+- Set is the collection of the unordered items.
+- Each element in the set must be unique and mutable.
 
 
-# c) Boolean Type -
+
+# Boolean Type -
 - Data type with one of the two built-in values, True or False.
 - 
 
