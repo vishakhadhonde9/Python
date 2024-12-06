@@ -232,6 +232,56 @@ Although tuples are immutable, they have some built-in methods:
 - Set is the collection of the unordered items.
 - Each element in the set must be unique and mutable.
 
+#### Creating a Set -
+    # Creating a set using curly braces
+    fruits = {"apple", "banana", "cherry"}
+                       
+                         OR
+                         
+    # Creating a set using the set() constructor
+    numbers = set([1, 2, 3, 4, 5])
+    
+#### Accessing Elements in a Set -
+    # Looping through a set
+    for fruit in fruits:
+        print(fruit)
+    
+    # Checking if an item exists
+    if "banana" in fruits:
+        print("Banana is in the set.")
+
+#### Methods in Set -
+- add(): Adds a single element to the set.
+- update(): Adds multiple elements to the set (can be a list, tuple, or another set).
+- remove(): Removes a specific element (raises an error if the element does not exist).
+- discard(): Removes an element if it exists, but does not raise an error if it does not.
+- pop(): Removes and returns a random element from the set.
+- clear(): Removes all elements from the set.
+
+#### Example -
+    # Adding an element
+    fruits.add("orange")
+    
+    # Adding multiple elements
+    fruits.update(["mango", "pear"])
+    
+    # Removing an element (raises KeyError if element is not found)
+    fruits.remove("banana")
+    
+    # Discarding an element (does not raise error if element is not found)
+    fruits.discard("cherry")
+    
+    # Popping a random element
+    removed_fruit = fruits.pop()
+    print(f"Removed: {removed_fruit}")
+    
+    # Clearing all elements
+    fruits.clear()
+
+
+
+
+
 
 
 # Boolean Type -
