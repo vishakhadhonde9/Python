@@ -114,7 +114,7 @@
     repeated = (1, 2) * 3
     print(repeated)  # Output: (1, 2, 1, 2, 1, 2)
 
-## Tuple Methods:
+### Tuple Methods:
 Although tuples are immutable, they have some built-in methods:
 
 #### count(): Returns the number of occurrences of an element.
@@ -124,13 +124,33 @@ Although tuples are immutable, they have some built-in methods:
 #### index(): Returns the index of the first occurrence of an element.
     print(my_tuple.index(3))  # Output: 3
 
-## Nested Tuples -
+### Nested Tuples -
     nested_tuple = (1, (2, 3), (4, 5))
     print(nested_tuple[1])  # Output: (2, 3)
 
-    
+## Range -
+- Range is a function that returns a sequence of numbers.
+- By default, range returns a sequence that begins at 0 and increments in steps of 1.
+- The range function only works with integers. Other data types like float numbers cannot be used.
+- There are three range parameters: start, stop, and step. Only stop is required.
+#### Syntax -
+     range(start, stop, step)
 
+- start : The number where the range starts (inclusive). The default is 0 if not provided.
+- stop (required): The number where the range ends (exclusive).
+- step : The increment between each number in the sequence. The default is 1 if not provided.
 
+#### Examples -
+     for i in range(5):
+         print(i)
+
+     for i in range(2, 6):
+         print(i)
+
+     for i in range(1, 10, 2):
+         print(i)
+
+# Mapping Type: dict -
 
 
 # c) Boolean Type -
