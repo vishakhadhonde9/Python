@@ -94,7 +94,41 @@
 - The key characteristic of a tuple is that once it's created, it cannot be modified you can't change, add, or remove elements after the tuple is defined.
 
 #### Accessing Elements-
+     # Accessing the first element
+     print(my_tuple[0])  # Output: 1
+        
+     # Accessing the last element
+     print(my_tuple[-1])  # Output: 4.5
 
+#### Creating a Tuple:
+     my_tuple = (1, 2, 3)
+     single_element_tuple = (5,)
+
+#### Concatenation -
+    tuple1 = (1, 2)
+    tuple2 = (3, 4)
+    combined = tuple1 + tuple2
+    print(combined)  # Output: (1, 2, 3, 4)
+
+#### Repetition -
+    repeated = (1, 2) * 3
+    print(repeated)  # Output: (1, 2, 1, 2, 1, 2)
+
+## Tuple Methods:
+Although tuples are immutable, they have some built-in methods:
+
+#### count(): Returns the number of occurrences of an element.
+    my_tuple = (1, 2, 2, 3, 2)
+    print(my_tuple.count(2))  # Output: 3
+
+#### index(): Returns the index of the first occurrence of an element.
+    print(my_tuple.index(3))  # Output: 3
+
+## Nested Tuples -
+    nested_tuple = (1, (2, 3), (4, 5))
+    print(nested_tuple[1])  # Output: (2, 3)
+
+    
 
 
 
