@@ -88,10 +88,12 @@
      print(mixed_list)
 
 
-# Tuple -
-- 
+## Tuple -
+- Tuple is an ordered, immutable collection of elements.
+- Tuples can contain elements of different types, including integers, strings, lists, or even other tuples.
+- The key characteristic of a tuple is that once it's created, it cannot be modified you can't change, add, or remove elements after the tuple is defined.
 
-
+#### Accessing Elements-
 
 
 
