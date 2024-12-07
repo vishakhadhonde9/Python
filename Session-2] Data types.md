@@ -280,13 +280,145 @@ Although tuples are immutable, they have some built-in methods:
 
 
 
+## Frozenset -
+- Frozenset is an immutable version of a set.
+- Like sets, frozensets are unordered collections of unique elements, but unlike regular sets, once a frozenset is created, its elements cannot be modified.
 
+#### Creating a frozenset -
+    # Creating a frozenset from a list
+    fruits = frozenset(["apple", "banana", "cherry"])
+    
+    # Creating a frozenset from a set
+    numbers = frozenset({1, 2, 3, 4, 5})
+    
+    # Creating an empty frozenset
+    empty_frozenset = frozenset()
 
+#### Accessing Elements in a frozenset -
+    for fruit in fruits:
+        print(fruit)
+        
+#### Modifying a frozenset -
+    # This will raise an error
+    fruits.add("orange")  # AttributeError: 'frozenset' object has no attribute 'add'
+    
+    # This will also raise an error
+    fruits.remove("banana")  # AttributeError: 'frozenset' object has no attribute 'remove'
 
 
 # Boolean Type -
 - Data type with one of the two built-in values, True or False.
-- 
+- They are the result of logical operations and comparisons and are a fundamental part of control flow in programs (such as if statements, loops, etc.).
+
+
+          # Boolean values
+          a = True
+          b = False
+
+        # Checking the type of a boolean
+        print(type(True))  # Output: <class 'bool'>
+        print(type(False)) # Output: <class 'bool'>
+        
+## Method in boolean type -
+- bool(): This function is used to convert a value into a Boolean.
+- All values in Python are considered "truthy" or "falsy".
+- 0, None = False
+- 1 = True
+
+        # Converting values to boolean
+        print(bool(0))      # Output: False (0 is falsy)
+        print(bool(1))      # Output: True (non-zero is truthy)
+        print(bool(""))     # Output: False (empty string is falsy)
+        print(bool("Hello"))# Output: True (non-empty string is truthy)
+        print(bool([]))     # Output: False (empty list is falsy)
+        print(bool([1, 2])) # Output: True (non-empty list is truthy)
+
+#  Binary Types: bytes, bytearray, memoryview
+## Bytes -
+- The bytes type represents an immutable sequence of bytes (8-bit values).
+- A bytes object is typically used to handle binary data that should not be modified.
+
+#### Creating a bytes object -
+You can create a bytes object using a literal with a b prefix or by converting a string or other iterable into bytes.
+
+    # Creating bytes using a literal
+    b = b"Hello"
+    print(b)  # Output: b'Hello'
+    
+    # Creating bytes using the bytes() constructor
+    b2 = bytes([65, 66, 67])  # List of integers (ASCII values of 'A', 'B', 'C')
+    print(b2)  # Output: b'ABC'
+
+#### Accessing elements:
+Each element in a bytes object is an integer between 0 and 255.
+
+    print(b[0])  # Output: 72 (ASCII value of 'H')
+
+#### Slicing:
+    
+     print(b[1:4])  # Output: b'ell'
+
+### Method in bytes -
+
+
+## Bytearray -
+- bytearray is a mutable sequence of bytes. You can modify its content after creation.
+- This is useful when you need to work with binary data and modify it in place.
+
+#### Creating a bytearray object:
+
+    # Creating a bytearray using a literal
+    ba = bytearray([65, 66, 67])  # List of integers (ASCII values of 'A', 'B', 'C')
+    print(ba)  # Output: bytearray(b'ABC')
+    
+    # Creating a bytearray from a string
+    ba2 = bytearray("hello", "utf-8")
+    print(ba2)  # Output: bytearray(b'hello')
+
+#### Modifying a bytearray: 
+        ba[0] = 90  # Change 'A' to 'Z'
+        print(ba)  # Output: bytearray(b'ZBC')
+
+#### Slicing:
+        print(ba[1:3])  # Output: bytearray(b'BC')
+
+#### Appending to a bytearray: 
+You can append elements to a bytearray using the append() method or extend() method.
+
+        ba.append(68)  # Add the ASCII value for 'D'
+        print(ba)  # Output: bytearray(b'ZBCD')
+        
+        ba.extend([69, 70])  # Add 'E' and 'F'
+        print(ba)  # Output: bytearray(b'ZBCDEF')
+
+## Memoryview -
+- A memoryview object allows you to access the internal data of another object that supports the buffer protocol, such as bytes, bytearray, or arrays from the array module.
+- memoryview provides a way to view and manipulate data without copying it.
+
+#### Creating a memoryview -
+    
+    mv = memoryview(bytearray(b"hello world"))
+    print(mv)  # Output: <memory at 0x7f9f7a0e59c0>
+
+#### Accessing data via memoryview -
+A memoryview allows access to the underlying data of the bytearray or bytes object without creating a copy.
+
+    # Accessing data in the memoryview
+    print(mv[0])  # Output: 104 (ASCII value of 'h')
+    
+
+#### Slicing a memoryview:
+    print(mv[1:5])  # Output: <memory at 0x7f9f7a0e5c00>
+
+
+# None Type -
+-  None data type represents the absence of a value or a null value.
+- It is a special constant in Python that is often used to signify "nothing" or "no value here".
+
+
+
+
+
 
 
 
