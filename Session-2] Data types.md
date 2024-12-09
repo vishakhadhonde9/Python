@@ -415,6 +415,8 @@ A memoryview allows access to the underlying data of the bytearray or bytes obje
 -  None data type represents the absence of a value or a null value.
 - It is a special constant in Python that is often used to signify "nothing" or "no value here".
 
+        x = None
+        print(x)  # Output: None
 
 
 
