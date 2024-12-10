@@ -8,4 +8,12 @@
   - Identity operators
   - Membership operators Bitwise operators
  
-# Arithmetic Operators -
+# 1. Arithmetic Operators -
+- These operators are used to perform basic arithmetic operations.
+    + : Addition
+    - : Subtraction
+    * : Multiplication
+    / : Division (float)
+    // : Floor Division (returns integer)
+    % : Modulus (remainder of division)
+    ** : Exponentiation (power)
