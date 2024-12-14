@@ -40,15 +40,31 @@
          print(f"{number} is odd.")
 
 
+    age=25
+    print ("age: ", age)
+    if age >=18:
+       print ("eligible to vote")
+    else:
+       print ("not eligible to vote")
+  
+  ## if else elif -
+  - **if statement:**
+      - Used to evaluate the first condition. If it evaluates to True, the code inside the if block is executed, and the rest of the conditions are not checked.
+- **elif (short for "else if"):**
+    - Allows you to check additional conditions if the previous if or elif conditions were not true. You can have multiple elif blocks. If one of the elif conditions is true, its corresponding code block is executed, and no further conditions are checked.
+- **else statement:**
+    - Executes a block of code if none of the previous conditions (if or elif) were True. The else block is optional, and it is used to define a default action when no conditions match.
 
-         
+# Syntax-
+  
 
+# Loop -
+
+    
   
   
-
-
-
-
-
-
+  
+  
+  
+  
 
