@@ -126,6 +126,19 @@ print("The sum of the first 10 numbers is:", total_sum)
 
 
 
+# Input string
+text = "Python"
+
+# Initialize an empty string to store the reversed string
+reversed_text = ""
+
+# Loop through the string in reverse order
+for char in text:
+    reversed_text = char + reversed_text  # Add each character at the start of reversed_text
+
+# Print the reversed string
+print("Original string:", text)
+print("Reversed string:", reversed_text)
 
 
 
