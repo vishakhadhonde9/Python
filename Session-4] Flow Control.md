@@ -111,6 +111,37 @@ for num in numbers:
         print(f"{num} is even")
     else:
         print(f"{num} is odd")
+
+
+# Initialize sum variable
+total_sum = 0
+
+# Loop through the first 10 numbers (1 to 10)
+for num in range(1, 11):
+    total_sum += num  # Add each number to the total sum
+
+# Print the result
+print("The sum of the first 10 numbers is:", total_sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
   
   
