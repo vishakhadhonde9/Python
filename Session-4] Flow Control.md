@@ -140,16 +140,37 @@ for char in text:
 print("Original string:", text)
 print("Reversed string:", reversed_text)
 
+## Nested for loop-
+- A nested for loop is a loop inside another loop.
+- The inner loop runs completely for every iteration of the outer loop.
+
+#### Syntax -
+
+     for outer_variable in outer_sequence:
+         for inner_variable in inner_sequence:
+            # Code block executed for each combination
+        
+#### Practice Examples -
+
+
+# Outer loop for x values
+for x in range(3):
+    # Inner loop for y values
+    for y in range(3):
+        print(f"({x}, {y})")
 
 
 
+# Outer loop controls the number of rows
+for i in range(1, 6):
+    # Inner loop prints stars in each row
+    for j in range(i):
+        print("*", end="")  # Print stars on the same line
+    print()  # Print a new line after each row
+    
 
-
-
-
-
-
-
+# while loop-
+-
 
 
 
