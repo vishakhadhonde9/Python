@@ -215,11 +215,38 @@ while True:
 
 
 # Break Statement -
-- 
+- The break statement in Python is used to exit a loop prematurely, whether it's a for loop or a while loop.
+- When the break statement is encountered, the loop terminates immediately, and the program continues with the next line of code after the loop.
+
+
+#### Examples-
+
+
+for i in range(1, 10):
+    if i == 5:  # Break when i is equal to 5
+        break
+    print(i)
 
 
 
+num = 1
+while num <= 10:
+    print(num)
+    if num == 7:  # Break the loop when num is 7
+        break
+    num += 1
+    
 
+
+number = 1
+while True:  # Infinite loop
+    print(number)
+    number += 1
+    if number > 5:  # Break the loop when condition is met
+        break
+
+
+# Continue Statement -
 
 
 
