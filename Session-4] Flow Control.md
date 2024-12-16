@@ -88,7 +88,30 @@
 
 #### Syntax -
 
-  
+    for variable in sequence:
+        # Code block to execute
+
+#### Practice Examples-
+     
+   fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+    print(fruit)
+
+for i in range(5):  # Loop from 0 to 4
+    print(i)
+
+
+for char in "Python":
+    print(char)
+
+
+   numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    if num % 2 == 0:
+        print(f"{num} is even")
+    else:
+        print(f"{num} is odd")
+        
   
   
   
