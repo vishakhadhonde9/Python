@@ -170,7 +170,78 @@ for i in range(1, 6):
     
 
 # while loop-
--
+- while loop is used to repeatedly execute a block of code as long as a specified condition evaluates to True.
+- The condition is checked before each iteration.
+
+#### Syntax -
+
+     while condition:
+         # Code block to execute
+    
+#### Practice Examples -
+
+count = 1
+while count <= 5:
+    print(count)
+    count += 1  # Increment count to avoid an infinite loop
+    
+
+num = 1
+total_sum = 0
+
+while num <= 10:
+    total_sum += num
+    num += 1
+
+print("Sum of first 10 numbers is:", total_sum)
+
+
+
+secret_number = 7
+guess = None
+
+while guess != secret_number:
+    guess = int(input("Guess the number: "))
+    if guess < secret_number:
+        print("Too low!")
+    elif guess > secret_number:
+        print("Too high!")
+
+print("You guessed it!")
+
+
+while True:
+    print("This is an infinite loop!")
+
+
+# Break Statement -
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
