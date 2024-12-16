@@ -55,13 +55,39 @@
 - **else statement:**
     - Executes a block of code if none of the previous conditions (if or elif) were True. The else block is optional, and it is used to define a default action when no conditions match.
 
-# Syntax-
-  
+#### Syntax-
+    if condition1:
+        # block of code if condition1 is True
+    elif condition2:
+        # block of code if condition2 is True
+    elif condition3:
+        # block of code if condition3 is True
+    else:
+        # block of code if no conditions are True
+#### Examples -
+    grade = int(input("Enter your grade: "))
+
+    if grade >= 90:
+        print("You got an A!")
+    elif grade >= 80:
+        print("You got a B!")
+    elif grade >= 70:
+        print("You got a C!")
+    elif grade >= 60:
+        print("You got a D!")
+    else:
+        print("You got an F!")
+
+
 
 # Loop -
+- Loops in Python are allow you to execute a block of code multiple times.
+## 1) for loop -
+- for loop in Python is used to iterate over a sequence (like a list, tuple, string, or range) and execute a block of code for each element in the sequence.
+- It is one of the most commonly used loops in Python because it allows you to easily iterate over collections of data.
 
-    
-  
+#### Syntax -
+
   
   
   
