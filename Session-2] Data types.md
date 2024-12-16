@@ -337,6 +337,7 @@ Although tuples are immutable, they have some built-in methods:
 ## Bytes -
 - The bytes type represents an immutable sequence of bytes (8-bit values).
 - A bytes object is typically used to handle binary data that should not be modified.
+- Bytes can be store number in between 0 to 255.
 
 #### Creating a bytes object -
 You can create a bytes object using a literal with a b prefix or by converting a string or other iterable into bytes.
@@ -392,9 +393,8 @@ You can append elements to a bytearray using the append() method or extend() met
         print(ba)  # Output: bytearray(b'ZBCDEF')
 
 ## Memoryview -
-- A memoryview object allows you to access the internal data of another object that supports the buffer protocol, such as bytes, bytearray, or arrays from the array module.
-- memoryview provides a way to view and manipulate data without copying it.
-
+- memoryview is a built-in type that allows you to access the internal memory of an object that supports the buffer protocol (e.g., bytes, bytearray, array), without copying the data.
+  
 #### Creating a memoryview -
     
     mv = memoryview(bytearray(b"hello world"))
