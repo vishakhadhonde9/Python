@@ -267,7 +267,13 @@ for i in range(1, 6):
 
 
 
-
+for i in range(1, 6):
+    if i == 3:
+        break  # Stop the loop when i is 3
+    if i == 2:
+        continue  # Skip printing when i is 2
+    print(i)
+    
 
 
 
