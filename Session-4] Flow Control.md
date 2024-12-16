@@ -247,11 +247,23 @@ while True:  # Infinite loop
 
 
 # Continue Statement -
+- The continue statement in Python is used inside loops to skip the current iteration and move to the next iteration of the loop.
+- When the continue statement is encountered, the rest of the code inside the loop is skipped for the current iteration, and the loop proceeds with the next iteration.
+
+#### Example -
 
 
+for i in range(1, 6):
+    if i == 3:
+        continue  # Skip the iteration when i equals 3
+    print(i)
 
 
-
+for i in range(1, 6):
+    if i == 2 or i == 4:
+        continue  # Skip if i is 2 or 4
+    print(i)
+    
 
 
 
