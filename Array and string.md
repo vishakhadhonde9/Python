@@ -6,3 +6,5 @@
             import array
 - If you need multidimensional arrays or advanced numerical operations, you can use the NumPy library:
             import numpy
+
+# Create an array -
