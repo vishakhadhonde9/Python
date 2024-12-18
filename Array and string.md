@@ -74,3 +74,17 @@ array_2d = np.array([
 print(array_2d[1][2])  # Access element at second row, third column (value: 6)
 
 
+# 3D Array -
+# 3D array using numpy
+array_3d = np.array([
+    [
+        [1, 2],
+        [3, 4]
+    ],
+    [
+        [5, 6],
+        [7, 8]
+    ]
+])
+
+print(array_3d[1][0][1]) # output : 6 
