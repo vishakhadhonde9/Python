@@ -32,3 +32,30 @@
 | `array.tolist()`         | Converts the array to a regular Python list.                              | `arr.tolist()` → `[6, 5, 3, 2, 1]`                                                         |
 | `array.buffer_info()`    | Returns a tuple (address, length) of the array buffer.                    | `arr.buffer_info()` → `(address, length)`                                                  |
 | `array.itemsize`         | Returns the size (in bytes) of each element in the array.                 | `arr.itemsize` → `4` (for an integer array)                                                |
+
+
+#### Examples -
+
+import array
+
+# Create an array
+arr = array.array('i', [1, 2, 3])
+
+# Append a new element
+arr.append(4)
+
+# Insert an element
+arr.insert(1, 10)
+
+# Remove an element
+arr.remove(2)
+
+# Pop an element
+popped = arr.pop()
+
+# Print results
+print("Array after operations:", arr)
+print("Popped element:", popped)
+
+
+
