@@ -62,3 +62,15 @@ print("Popped element:", popped)
 # Multidimensional Array -
 - In Python, you can create a multidimensional array using lists of lists.
          
+## Create 2D array -
+import numpy as np
+
+# 2D array using numpy
+array_2d = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+print(array_2d[1][2])  # Access element at second row, third column (value: 6)
+
+
