@@ -60,3 +60,5 @@ print("Popped element:", popped)
 
 
 # Multidimensional Array -
+- In Python, you can create a multidimensional array using lists of lists.
+         
