@@ -8,6 +8,7 @@
             import numpy
 
 # Create an array -
+      array.array(typecode, [initializers])
       
 
 | Type Code | Data Type         | Example          |
