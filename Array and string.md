@@ -8,3 +8,10 @@
             import numpy
 
 # Create an array -
+      
+
+| Type Code | Data Type         | Example          |
+|-----------|-------------------|------------------|
+| `i`       | Integer           | `10, 20, 30`    |
+| `f`       | Floating-point    | `1.1, 2.2`      |
+| `u`       | Unicode characters| `'a', 'b'`      |
