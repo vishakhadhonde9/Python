@@ -36,26 +36,26 @@
 
 #### Examples -
 
-import array
-
-# Create an array
-arr = array.array('i', [1, 2, 3])
-
-# Append a new element
-arr.append(4)
-
-# Insert an element
-arr.insert(1, 10)
-
-# Remove an element
-arr.remove(2)
-
-# Pop an element
-popped = arr.pop()
-
-# Print results
-print("Array after operations:", arr)
-print("Popped element:", popped)
+            import array
+            
+            # Create an array
+            arr = array.array('i', [1, 2, 3])
+            
+            # Append a new element
+            arr.append(4)
+            
+            # Insert an element
+            arr.insert(1, 10)
+            
+            # Remove an element
+            arr.remove(2)
+            
+            # Pop an element
+            popped = arr.pop()
+            
+            # Print results
+            print("Array after operations:", arr)
+            print("Popped element:", popped)
 
 
 
@@ -63,28 +63,28 @@ print("Popped element:", popped)
 - In Python, you can create a multidimensional array using lists of lists.
          
 ## Create 2D array -
-import numpy as np
-
-# 2D array using numpy
-array_2d = np.array([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-])
-print(array_2d[1][2])  # Access element at second row, third column (value: 6)
+            import numpy as np
+            
+            # 2D array using numpy
+            array_2d = np.array([
+                [1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]
+            ])
+            print(array_2d[1][2])  # Access element at second row, third column (value: 6)
 
 
 # 3D Array -
-# 3D array using numpy
-array_3d = np.array([
-    [
-        [1, 2],
-        [3, 4]
-    ],
-    [
-        [5, 6],
-        [7, 8]
-    ]
-])
-
-print(array_3d[1][0][1]) # output : 6 
+            # 3D array using numpy
+            array_3d = np.array([
+                [
+                    [1, 2],
+                    [3, 4]
+                ],
+                [
+                    [5, 6],
+                    [7, 8]
+                ]
+            ])
+            
+            print(array_3d[1][0][1]) # output : 6 
