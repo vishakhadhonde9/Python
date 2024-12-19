@@ -88,3 +88,95 @@
             ])
             
             print(array_3d[1][0][1]) # output : 6 
+
+# String Function -
+## 1. len()-
+- Purpose: Returns the length of a string.
+- Syntax: len(string)
+
+#### Example -
+         text = "Hello, world!"
+         print(len(text))  # Output: 13
+            
+            
+# 2. lower()
+- Purpose: Converts all characters in the string to lowercase.
+- Syntax: string.lower()
+#### Example -
+            text = "HELLO"
+            print(text.lower())  # Output: hello
+# 3. upper()
+- Purpose: Converts all characters in the string to uppercase.
+- Syntax: string.upper()
+
+#### Example -
+            text = "hello"
+            print(text.upper())  # Output: HELLO
+            
+# 4. replace()
+- Purpose: Replaces a specified substring with another substring.
+- Syntax: string.replace(old, new, count)
+            - old: The substring to be replaced.
+            - new: The substring that will replace old.
+            - count: (optional) The number of occurrences to replace.
+#### Example -
+            text = "hello world"
+            print(text.replace("world", "Python"))  # Output: hello Python
+            
+# 5. find()
+- Purpose: Searches for a substring and returns its index position (first occurrence).
+- Syntax: string.find(substring)
+
+#### Example -
+            text = "hello world"
+            print(text.find("world"))  # Output: 6
+            
+# 6. join()
+- Purpose: Joins elements of an iterable (like a list) with a string as the separator.
+- Syntax: separator.join(iterable)
+
+## Example -
+            words = ["Hello", "world"]
+            print(" ".join(words))  # Output: Hello world
+
+# 7. split()
+- Purpose: Splits a string into a list of substrings based on a delimiter (whitespace by default).
+- Syntax: string.split(separator, maxsplit)
+
+## Example-
+            text = "Hello world Python"
+            print(text.split())  # Output: ['Hello', 'world', 'Python']
+
+# 8. count()
+- Purpose: Returns the number of occurrences of a substring in the string.
+- Syntax: string.count(substring)
+
+# Example -
+            text = "hello hello world"
+            print(text.count("hello"))  # Output: 2
+
+# 9. format()
+- Purpose: Formats a string by inserting values into placeholders.
+- Syntax: string.format(value1, value2, ...)
+## Example -
+            name = "Alice"
+            age = 30
+            print("My name is {} and I am {} years old.".format(name, age))
+            # Output: My name is Alice and I am 30 years old.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
