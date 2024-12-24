@@ -30,3 +30,75 @@
 
 
   
+# Create a File -
+- To create a file, you can use the write ('w'), append ('a'), or exclusive creation ('x') mode.
+
+      # Using 'w' mode (creates if file doesn't exist)
+with open("filename.txt", "w") as file:
+    file.write("Content to write in the file.")
+
+# Using 'a' mode (creates if file doesn't exist)
+with open("filename.txt", "a") as file:
+    file.write("Content to append to the file.")
+
+# Using 'x' mode (raises error if file exists)
+try:
+    with open("filename.txt", "x") as file:
+        file.write("This file is created using 'x' mode.")
+except FileExistsError:
+    print("File already exists.")
+
+
+# Write to a File
+- Writing in 'w' mode overwrites the content if the file already exists.
+
+       # Open the file in write mode
+file = open("example.txt", "w")
+
+# Write content to the file
+file.write("Hello, World!\nThis is a file handling example.")
+
+# Close the file
+file.close()
+
+# Using with Statement -
+- Ensures the file is automatically closed after the operation.
+
+
+       with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+    
+
+# Appending to a File -
+file = open("example.txt", "a")
+file.write("\nAppending a new line.")
+file.close()
+
+
+
+
+# Reading Specific Amount of Data-
+
+
+file = open("example.txt", "r")
+print(file.read(10))  # Reads the first 10 characters
+file.close()
+
+
+# File Deletion
+Use the os module to delete or check for files.
+
+import os
+
+# Delete a file
+if os.path.exists("example.txt"):
+    os.remove("example.txt")
+else:
+    print("The file does not exist.")
+
+
+
+
+
+
