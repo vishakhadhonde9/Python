@@ -49,6 +49,10 @@ except FileExistsError:
     print("File already exists.")
 
 
+
+    
+
+
 # Write to a File
 - Writing in 'w' mode overwrites the content if the file already exists.
 
@@ -100,5 +104,9 @@ else:
 
 
 
+- os module: Used to interact with the operating system for file and directory operations.
+- os.path.exists("example.txt"): Checks if the file example.txt exists.
+- os.remove("example.txt"): Deletes the specified file.
+- else block: Handles the case when the file does not exist.
 
 
