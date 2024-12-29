@@ -5,3 +5,6 @@
      - Trying to convert a string into an integer (ValueError)
      - Accessing a file that does not exist (FileNotFoundError)
 - When these errors occur, Python stops the program unless we handle the exception.
+
+# Exception Handling -
+- 
