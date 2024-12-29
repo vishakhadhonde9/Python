@@ -11,10 +11,30 @@
 - It uses a set of keywords to catch and manage exceptions.
 
 
-# Try Block -
-- Code that may raise an exception is placed in the try block.
+# Try and Expect Block -
+- **try:** Code that may raise an exception is placed in the try block.
+- **except:** Handles the exception if it occurs.
+- **else:** Executes code if no exception occurs.
+- **finally:** Executes code regardless of whether an exception occurred or not
 - Control Flow: If an error occurs in the try block, control immediately passes to the corresponding except block.
 - No Exception: If no error occurs, the except block is skipped.
+
+
+
+try:
+    # Code that may raise an exception
+    risky_operation()
+except ExceptionType1:
+    # Code to handle ExceptionType1
+except ExceptionType2 as e:
+    # Code to handle ExceptionType2 and capture exception details in 'e'
+else:
+    # Code to execute if no exception occurs
+finally:
+    # Code to execute always (cleanup actions)
+    
+
+
 
 
 try:
@@ -40,4 +60,13 @@ except ZeroDivisionError:
     
 
 
- 
+ try:
+    with open("file.txt", "r") as file:
+        content = file.read()
+except FileNotFoundError:
+    print("File not found.")
+else:
+    print("File read successfully:", content)
+finally:
+    print("Operation complete.")
+
