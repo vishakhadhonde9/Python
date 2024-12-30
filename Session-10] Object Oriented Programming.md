@@ -41,3 +41,8 @@
 
 
 
+car1 = Car("Toyota", "Red")  # car1 is an object of the Car class.
+car1.drive()  # Output: The Red Toyota is driving.
+
+car2 = Car("Honda", "Blue")  # Another object of the Car class.
+car2.drive()  # Output: The Blue Honda is driving.
