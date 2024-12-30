@@ -29,4 +29,10 @@
     def drive(self):  # Method
         print(f"The {self.color} {self.brand} is driving.")
 
-# "Car" is the class.
+    # "Car" is the class.
+
+
+
+# 2. What is an Object? -
+- An object is an instance of a class. When you create an object, you bring the class to life with specific values.
+- For example: The "Car" class is the blueprint. A specific car (e.g., a red Toyota) is the object.
