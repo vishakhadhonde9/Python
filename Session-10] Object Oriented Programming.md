@@ -54,3 +54,62 @@ car2.drive()  # Output: The Blue Honda is driving.
 
 
 
+# Examples - 
+
+class Student:
+    def __init__(self, name, age, grades):
+        self.name = name  # Attribute: Name of the student
+        self.age = age  # Attribute: Age of the student
+        self.grades = grades  # Attribute: List of grades
+
+    def display_info(self):
+        print(f"Student Name: {self.name}, Age: {self.age}, Grades: {self.grades}")
+
+    def average_grade(self):
+        return sum(self.grades) / len(self.grades)
+
+# Create objects
+student1 = Student("John", 20, [85, 90, 88])
+student2 = Student("Jane", 22, [78, 82, 91])
+
+# Access methods
+student1.display_info()  # Output: Student Name: John, Age: 20, Grades: [85, 90, 88]
+print(student1.average_grade())  # Output: 87.666...
+student2.display_info()  # Output: Student Name: Jane, Age: 22, Grades: [78, 82, 91]
+print(student2.average_grade())  # Output: 83.666...
+
+
+
+
+
+class Animal:
+    def __init__(self, name, sound):
+        self.name = name  # Attribute: Name of the animal
+        self.sound = sound  # Attribute: Sound the animal makes
+
+    def make_sound(self):
+        print(f"The {self.name} says {self.sound}")
+
+# Create objects
+dog = Animal("Dog", "Woof")
+cat = Animal("Cat", "Meow")
+
+# Access methods
+dog.make_sound()  # Output: The Dog says Woof
+cat.make_sound()  # Output: The Cat says Meow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
