@@ -100,7 +100,11 @@ cat.make_sound()  # Output: The Cat says Meow
 
 
 
-
+# Constructor -
+- Constructor is a special method that is automatically called when an object of a class is created.
+- Its primary role is to initialize the attributes (data) of the object.
+- The constructor in Python is defined using the __init__() method.
+- It is the initializer method that sets up the object's state when it is instantiated.
 
 
 
