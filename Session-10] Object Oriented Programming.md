@@ -36,3 +36,8 @@
 # 2. What is an Object? -
 - An object is an instance of a class. When you create an object, you bring the class to life with specific values.
 - For example: The "Car" class is the blueprint. A specific car (e.g., a red Toyota) is the object.
+
+       object_name = ClassName(arguments)
+
+
+
