@@ -41,8 +41,16 @@
 
 
 
-car1 = Car("Toyota", "Red")  # car1 is an object of the Car class.
-car1.drive()  # Output: The Red Toyota is driving.
+# Create an object of the Car class
+car1 = Car("Toyota", "Red")  # car1 is an object
+car2 = Car("Honda", "Blue")  # car2 is another object
 
-car2 = Car("Honda", "Blue")  # Another object of the Car class.
+# Access attributes and call methods
+print(car1.brand)  # Output: Toyota
+print(car2.color)  # Output: Blue
+
+car1.drive()  # Output: The Red Toyota is driving.
 car2.drive()  # Output: The Blue Honda is driving.
+
+
+
