@@ -107,6 +107,64 @@ cat.make_sound()  # Output: The Cat says Meow
 - It is the initializer method that sets up the object's state when it is instantiated.
 
 
+class ClassName:
+    def __init__(self, parameters):
+        self.attribute = value
+
+
+
+- Automatically Called: When an object is created, the constructor (__init__) is called automatically.
+- Initialization of Attributes: It initializes the attributes of an object when the object is created.
+- Only One Constructor: A class can have only one constructor, but it can accept different numbers of arguments by using default values or variable arguments.
+- The self Parameter: The self parameter refers to the instance of the class, allowing the constructor to assign values to instance variables.
+ 
+
+# Types of Constructor -
+## 1. Default Constructor -
+- A constructor that doesn't take any arguments except self and initializes attributes with default values.
+
+
+
+class Car:
+    def __init__(self):
+        self.brand = "Toyota"  # Default value
+        self.color = "Red"     # Default value
+
+    def display_info(self):
+        print(f"Brand: {self.brand}, Color: {self.color}")
+
+# Create an object using the default constructor
+my_car = Car()
+
+# Access methods
+my_car.display_info()  # Output: Brand: Toyota, Color: Red
+
+
+
+
+
+## 2. Parameterized Constructor -
+- A constructor that takes arguments to initialize attributes with the provided values.
+
+
+
+class Car:
+    def __init__(self, brand, color):
+        self.brand = brand  # Initialize brand with the passed argument
+        self.color = color  # Initialize color with the passed argument
+
+    def display_info(self):
+        print(f"Brand: {self.brand}, Color: {self.color}")
+
+# Create objects using the parameterized constructor
+my_car1 = Car("Toyota", "Red")
+my_car2 = Car("Honda", "Blue")
+
+# Access methods
+my_car1.display_info()  # Output: Brand: Toyota, Color: Red
+my_car2.display_info()  # Output: Brand: Honda, Color: Blue
+
+
 
 
 
