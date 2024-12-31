@@ -174,7 +174,11 @@ print(bike.start_engine())  # Output: Bike engine started!
 
 
 
-# Inheritance 
+# Inheritance -
+- It allows a class (called the child class or subclass) to inherit the properties and methods of another class (called the parent class or base class).
+- This promotes code reuse and creates a relationship between classes.
+- Parent Class: The class being inherited from.
+- Child Class: The class that inherits from the parent class
 
 
 
