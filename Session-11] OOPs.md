@@ -283,7 +283,6 @@ child2.display_child2()  # Output: This is Child2.
 
 
 
-
 ## 5.Hybrid Inheritance: 
 - A combination of different types of inheritance.
 
@@ -331,7 +330,9 @@ child.greet()
 
 
 
-# Abstraction -
+# Polymorphism -
+- Polymorphism means "many forms".
+- It allows the same function, method, or operation to work differently based on the object or data type
 
 
 
