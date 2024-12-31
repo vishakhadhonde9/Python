@@ -114,6 +114,73 @@ print(student.get_grade())  # Output: 95
 
 
 
+from abc import ABC, abstractmethod
+
+# Abstract class
+class Animal(ABC):
+    @abstractmethod  # Abstract method
+    def sound(self):
+        pass  # No implementation here
+
+# Concrete class inheriting from Animal
+class Dog(Animal):
+    def sound(self):  # Implementation of abstract method
+        print("Bark")
+
+class Cat(Animal):
+    def sound(self):  # Implementation of abstract method
+        print("Meow")
+
+# Creating objects of the concrete classes
+dog = Dog()
+dog.sound()  # Output: Bark
+
+cat = Cat()
+cat.sound()  # Output: Meow
+
+- pass is a placeholder that allows the code to run without errors when there is no implementation for a method, class, or block of code.
+
+
+
+
+
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass  # Abstract method
+
+class Car(Vehicle):
+    def start_engine(self):
+        return "Car engine started!"
+
+class Bike(Vehicle):
+    def start_engine(self):
+        return "Bike engine started!"
+
+# Creating objects
+car = Car()
+bike = Bike()
+
+print(car.start_engine())  # Output: Car engine started!
+print(bike.start_engine())  # Output: Bike engine started!
+
+
+
+
+
+
+
+
+
+# Inheritance 
+
+
+
+
+
+
 
 
 
