@@ -333,6 +333,30 @@ child.greet()
 # Polymorphism -
 - Polymorphism means "many forms".
 - It allows the same function, method, or operation to work differently based on the object or data type
+- Polymorphism lets you use the same code to work with objects of different types. This makes your code more flexible and easier to manage.
+
+# 1. Compile-Time Polymorphism (Method Overloading) -
+- Python does not support traditional method overloading like some other languages.
+
+# 2. Run-Time Polymorphism (Method Overriding) -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
