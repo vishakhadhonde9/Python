@@ -181,6 +181,32 @@ print(bike.start_engine())  # Output: Bike engine started!
 - Child Class: The class that inherits from the parent class
 
 
+# Types of Inheritance in Python:
+## 1.Single Inheritance:
+- One child class inherits from one parent class.
+
+
+
+
+
+## 2.Multiple Inheritance:
+- A child class inherits from multiple parent classes.
+
+
+
+
+
+## 3.Multilevel Inheritance: 
+- A child class inherits from another child class.
+
+
+
+## 4.Hierarchical Inheritance: 
+- Multiple child classes inherit from one parent class.
+
+
+## 5.Hybrid Inheritance: 
+- A combination of different types of inheritance.
 
 
 
