@@ -339,6 +339,38 @@ child.greet()
 - Python does not support traditional method overloading like some other languages.
 
 # 2. Run-Time Polymorphism (Method Overriding) -
+- Overriding means function with same name and same parameters.
+- Overriding is possible only in a subclass that inherits from a parent class.
+
+
+# Parent class
+class Animal:
+    def sound(self):
+        return "Some generic sound"
+
+# Subclass overriding the parent method
+class Dog(Animal):
+    def sound(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow!"
+
+# Using the overridden methods
+animal = Animal()
+dog = Dog()
+cat = Cat()
+
+print(animal.sound())  # Output: Some generic sound
+print(dog.sound())     # Output: Woof!
+print(cat.sound())     # Output: Meow!
+
+
+
+
+
+
 
 
 
