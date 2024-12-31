@@ -1,4 +1,4 @@
-# Pillers/Characteristics of OOPs-
+ki# Pillers/Characteristics of OOPs-
 
 # Encapsulation -
 - Encapsulation in Python is one of the fundamental concepts of object-oriented programming (OOP).
@@ -52,6 +52,55 @@ car.start()  # Output: Engine started
 # Trying to access private attribute or method directly will cause an error
 # print(car.__colour)  # AttributeError: 'Car' object has no attribute '__colour'
 # car.__start_engine()  # AttributeError: 'Car' object has no attribute '__start_engine'
+
+
+
+
+
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name         # Public attribute
+        self._age = age          # Protected attribute
+        self.__grade = grade     # Private attribute
+
+    # Getter for private attribute
+    def get_grade(self):
+        return self.__grade
+
+    # Setter for private attribute
+    def set_grade(self, new_grade):
+        if new_grade >= 0 and new_grade <= 100:
+            self.__grade = new_grade
+        else:
+            print("Invalid grade.")
+
+# Creating a Student object
+student = Student("John", 16, 85)
+
+# Accessing public attribute
+print(student.name)  # Output: John
+
+# Accessing protected attribute (not recommended)
+print(student._age)  # Output: 16
+
+# Accessing private attribute directly (will cause an error)
+# print(student.__grade)  # Uncommenting this will raise an AttributeError
+
+# Using the getter method to access private attribute
+print(student.get_grade())  # Output: 85
+
+# Using the setter method to modify the private attribute
+student.set_grade(95)
+print(student.get_grade())  # Output: 95
+
+
+
+
+
+
+
+
+
 
 
 
