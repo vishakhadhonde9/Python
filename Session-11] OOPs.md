@@ -101,9 +101,15 @@ print(student.get_grade())  # Output: 95
 - The main goal of abstraction is to simplify the interface for users and prevent them from needing to understand the internal workings.
 - Abstraction in Python is typically achieved using abstract classes and abstract methods.
 
-## 
+## 1. Abstract Classes:
+- An abstract class is a class that cannot be instantiated directly.
+- It serves as a blueprint for other classes. You define it using the ABC (Abstract Base Class) module in Python, which is part of the abc module.
+- Abstract classes can have both abstract methods (methods without implementation) and concrete methods (methods with implementation).
 
-
+## 2. Abstract Methods:
+- An abstract method is a method that is declared in an abstract class but does not have any implementation.
+- It only has the method signature.
+- Subclasses of the abstract class must implement this method, or else they will also be considered abstract.
 
 
 
