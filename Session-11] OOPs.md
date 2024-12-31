@@ -96,7 +96,12 @@ print(student.get_grade())  # Output: 95
 
 
 
+# Abstraction -
+- Abstraction in Python is a concept that involves hiding the complex implementation details of a system and showing only the essential features.
+- The main goal of abstraction is to simplify the interface for users and prevent them from needing to understand the internal workings.
+- Abstraction in Python is typically achieved using abstract classes and abstract methods.
 
+## 
 
 
 
