@@ -186,11 +186,44 @@ print(bike.start_engine())  # Output: Bike engine started!
 - One child class inherits from one parent class.
 
 
+class Parent:
+    def greet(self):
+        print("Hello from the Parent class!")
+
+class Child(Parent):
+    def display(self):
+        print("This is the Child class.")
+
+# Creating objects
+child = Child()
+child.greet()  # Output: Hello from the Parent class!
+child.display()  # Output: This is the Child class.
+
 
 
 
 ## 2.Multiple Inheritance:
 - A child class inherits from multiple parent classes.
+
+
+ 
+class Father:
+    def skill_father(self):
+        print("Father is good at carpentry.")
+
+class Mother:
+    def skill_mother(self):
+        print("Mother is good at painting.")
+
+class Child(Father, Mother):
+    def skill_child(self):
+        print("Child is good at programming.")
+
+# Creating object
+child = Child()
+child.skill_father()  # Output: Father is good at carpentry.
+child.skill_mother()  # Output: Mother is good at painting.
+child.skill_child()   # Output: Child is good at programming.
 
 
 
@@ -200,17 +233,105 @@ print(bike.start_engine())  # Output: Bike engine started!
 - A child class inherits from another child class.
 
 
+class Grandparent:
+    def family_name(self):
+        print("Family name is Smith.")
+
+class Parent(Grandparent):
+    def greet(self):
+        print("Hello from the Parent class!")
+
+class Child(Parent):
+    def display(self):
+        print("This is the Child class.")
+
+# Creating object
+child = Child()
+child.family_name()  # Output: Family name is Smith.
+child.greet()        # Output: Hello from the Parent class!
+child.display()      # Output: This is the Child class.
+
+
+
 
 ## 4.Hierarchical Inheritance: 
 - Multiple child classes inherit from one parent class.
+
+
+class Parent:
+    def greet(self):
+        print("Hello from the Parent class!")
+
+class Child1(Parent):
+    def display_child1(self):
+        print("This is Child1.")
+
+class Child2(Parent):
+    def display_child2(self):
+        print("This is Child2.")
+
+# Creating objects
+child1 = Child1()
+child1.greet()         # Output: Hello from the Parent class!
+child1.display_child1()  # Output: This is Child1.
+
+child2 = Child2()
+child2.greet()         # Output: Hello from the Parent class!
+child2.display_child2()  # Output: This is Child2.
+
+
+
+
 
 
 ## 5.Hybrid Inheritance: 
 - A combination of different types of inheritance.
 
 
+### Overriding in Inheritance -
+- Child classes can override methods from the parent class.
 
 
+class Parent:
+    def greet(self):
+        print("Hello from the Parent class!")
+
+class Child(Parent):
+    def greet(self):
+        print("Hello from the Child class!")  # Overriding greet method
+
+# Creating object
+child = Child()
+child.greet()  # Output: Hello from the Child class!
+
+
+
+### Using super() to Access Parent Methods -
+- The super() function is used to call a method from the parent class.
+
+
+class Parent:
+    def greet(self):
+        print("Hello from the Parent class!")
+
+class Child(Parent):
+    def greet(self):
+        super().greet()  # Call the parent class's greet method
+        print("Hello from the Child class!")
+
+# Creating object
+child = Child()
+child.greet()
+# Output:
+# Hello from the Parent class!
+# Hello from the Child class!
+
+
+
+
+
+
+# Abstraction -
 
 
 
