@@ -8,3 +8,39 @@
     - MySQL: Install mysql-connector-python or pymysql.
     - PostgreSQL: Install psycopg2.
     - MongoDB: Install pymongo
+
+
+
+
+
+
+import mysql.connector
+
+# Connect to MySQL database
+connection = mysql.connector.connect(
+    host="localhost",
+    user="your_username",
+    password="your_password",
+    database="your_database"
+)
+
+cursor = connection.cursor()
+
+# Create a table
+cursor.execute("CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT)")
+
+# Insert data
+cursor.execute("INSERT INTO users (name, age) VALUES (%s, %s)", ("Bob", 25))
+
+# Fetch data
+cursor.execute("SELECT * FROM users")
+print(cursor.fetchall())
+
+# Commit changes and close
+connection.commit()
+connection.close()
+
+
+
+- The mysql.connector.connect() function establishes a connection to your MySQL database.
+- 
