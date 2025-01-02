@@ -47,3 +47,4 @@ connection.close()
 - Once the cursor is created, you can use it to send SQL commands to the database.
 - VALUES (%s, %s): Placeholder syntax for inserting values securely.
 %s is a placeholder for the actual data.
+- fetchall() retrieves all the rows from the result of the query. It returns a list of tuples, where each tuple represents a row in the table.
