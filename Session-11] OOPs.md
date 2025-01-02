@@ -20,79 +20,79 @@ ki# Pillers/Characteristics of OOPs-
 
 
 
-class Car:
-    def __init__(self, brand, colour):
-        self.brand = brand  # public attribute
-        self.__colour = colour  # private attribute
-
-    # Public method to access private attribute
-    def get_colour(self):
-        return self.__colour
-
-    # Private method
-    def __start_engine(self):
-        print("Engine started")
-
-    # Public method calling a private method
-    def start(self):
-        self.__start_engine()
-
-# Create an object of Car
-car = Car("Toyota", "Red")
-
-# Access public attribute
-print(car.brand)  # Output: Toyota
-
-# Access private attribute through a public method
-print(car.get_colour())  # Output: Red
-
-# Call public method which internally uses private method
-car.start()  # Output: Engine started
-
-# Trying to access private attribute or method directly will cause an error
-# print(car.__colour)  # AttributeError: 'Car' object has no attribute '__colour'
-# car.__start_engine()  # AttributeError: 'Car' object has no attribute '__start_engine'
-
-
+        class Car:
+            def __init__(self, brand, colour):
+                self.brand = brand  # public attribute
+                self.__colour = colour  # private attribute
+        
+            # Public method to access private attribute
+            def get_colour(self):
+                return self.__colour
+        
+            # Private method
+            def __start_engine(self):
+                print("Engine started")
+        
+            # Public method calling a private method
+            def start(self):
+                self.__start_engine()
+        
+        # Create an object of Car
+        car = Car("Toyota", "Red")
+        
+        # Access public attribute
+        print(car.brand)  # Output: Toyota
+        
+        # Access private attribute through a public method
+        print(car.get_colour())  # Output: Red
+        
+        # Call public method which internally uses private method
+        car.start()  # Output: Engine started
+        
+        # Trying to access private attribute or method directly will cause an error
+        # print(car.__colour)  # AttributeError: 'Car' object has no attribute '__colour'
+        # car.__start_engine()  # AttributeError: 'Car' object has no attribute '__start_engine'
 
 
 
-class Student:
-    def __init__(self, name, age, grade):
-        self.name = name         # Public attribute
-        self._age = age          # Protected attribute
-        self.__grade = grade     # Private attribute
 
-    # Getter for private attribute
-    def get_grade(self):
-        return self.__grade
 
-    # Setter for private attribute
-    def set_grade(self, new_grade):
-        if new_grade >= 0 and new_grade <= 100:
-            self.__grade = new_grade
-        else:
-            print("Invalid grade.")
-
-# Creating a Student object
-student = Student("John", 16, 85)
-
-# Accessing public attribute
-print(student.name)  # Output: John
-
-# Accessing protected attribute (not recommended)
-print(student._age)  # Output: 16
-
-# Accessing private attribute directly (will cause an error)
-# print(student.__grade)  # Uncommenting this will raise an AttributeError
-
-# Using the getter method to access private attribute
-print(student.get_grade())  # Output: 85
-
-# Using the setter method to modify the private attribute
-student.set_grade(95)
-print(student.get_grade())  # Output: 95
-
+        class Student:
+            def __init__(self, name, age, grade):
+                self.name = name         # Public attribute
+                self._age = age          # Protected attribute
+                self.__grade = grade     # Private attribute
+        
+            # Getter for private attribute
+            def get_grade(self):
+                return self.__grade
+        
+            # Setter for private attribute
+            def set_grade(self, new_grade):
+                if new_grade >= 0 and new_grade <= 100:
+                    self.__grade = new_grade
+                else:
+                    print("Invalid grade.")
+        
+        # Creating a Student object
+        student = Student("John", 16, 85)
+        
+        # Accessing public attribute
+        print(student.name)  # Output: John
+        
+        # Accessing protected attribute (not recommended)
+        print(student._age)  # Output: 16
+        
+        # Accessing private attribute directly (will cause an error)
+        # print(student.__grade)  # Uncommenting this will raise an AttributeError
+        
+        # Using the getter method to access private attribute
+        print(student.get_grade())  # Output: 85
+        
+        # Using the setter method to modify the private attribute
+        student.set_grade(95)
+        print(student.get_grade())  # Output: 95
+        
 
 
 
@@ -114,57 +114,57 @@ print(student.get_grade())  # Output: 95
 
 
 
-from abc import ABC, abstractmethod
-
-# Abstract class
-class Animal(ABC):
-    @abstractmethod  # Abstract method
-    def sound(self):
-        pass  # No implementation here
-
-# Concrete class inheriting from Animal
-class Dog(Animal):
-    def sound(self):  # Implementation of abstract method
-        print("Bark")
-
-class Cat(Animal):
-    def sound(self):  # Implementation of abstract method
-        print("Meow")
-
-# Creating objects of the concrete classes
-dog = Dog()
-dog.sound()  # Output: Bark
-
-cat = Cat()
-cat.sound()  # Output: Meow
-
-- pass is a placeholder that allows the code to run without errors when there is no implementation for a method, class, or block of code.
-
-
-
-
-
-from abc import ABC, abstractmethod
-
-class Vehicle(ABC):
-    @abstractmethod
-    def start_engine(self):
-        pass  # Abstract method
-
-class Car(Vehicle):
-    def start_engine(self):
-        return "Car engine started!"
-
-class Bike(Vehicle):
-    def start_engine(self):
-        return "Bike engine started!"
-
-# Creating objects
-car = Car()
-bike = Bike()
-
-print(car.start_engine())  # Output: Car engine started!
-print(bike.start_engine())  # Output: Bike engine started!
+        from abc import ABC, abstractmethod
+        
+        # Abstract class
+        class Animal(ABC):
+            @abstractmethod  # Abstract method
+            def sound(self):
+                pass  # No implementation here
+        
+        # Concrete class inheriting from Animal
+        class Dog(Animal):
+            def sound(self):  # Implementation of abstract method
+                print("Bark")
+        
+        class Cat(Animal):
+            def sound(self):  # Implementation of abstract method
+                print("Meow")
+        
+        # Creating objects of the concrete classes
+        dog = Dog()
+        dog.sound()  # Output: Bark
+        
+        cat = Cat()
+        cat.sound()  # Output: Meow
+        
+        - pass is a placeholder that allows the code to run without errors when there is no implementation for a method, class, or block of code.
+        
+        
+        
+        
+        
+        from abc import ABC, abstractmethod
+        
+        class Vehicle(ABC):
+            @abstractmethod
+            def start_engine(self):
+                pass  # Abstract method
+        
+        class Car(Vehicle):
+            def start_engine(self):
+                return "Car engine started!"
+        
+        class Bike(Vehicle):
+            def start_engine(self):
+                return "Bike engine started!"
+        
+        # Creating objects
+        car = Car()
+        bike = Bike()
+        
+        print(car.start_engine())  # Output: Car engine started!
+        print(bike.start_engine())  # Output: Bike engine started!
 
 
 
@@ -186,18 +186,18 @@ print(bike.start_engine())  # Output: Bike engine started!
 - One child class inherits from one parent class.
 
 
-class Parent:
-    def greet(self):
-        print("Hello from the Parent class!")
-
-class Child(Parent):
-    def display(self):
-        print("This is the Child class.")
-
-# Creating objects
-child = Child()
-child.greet()  # Output: Hello from the Parent class!
-child.display()  # Output: This is the Child class.
+        class Parent:
+            def greet(self):
+                print("Hello from the Parent class!")
+        
+        class Child(Parent):
+            def display(self):
+                print("This is the Child class.")
+        
+        # Creating objects
+        child = Child()
+        child.greet()  # Output: Hello from the Parent class!
+        child.display()  # Output: This is the Child class.
 
 
 
@@ -207,25 +207,25 @@ child.display()  # Output: This is the Child class.
 
 
  
-class Father:
-    def skill_father(self):
-        print("Father is good at carpentry.")
+        class Father:
+            def skill_father(self):
+                print("Father is good at carpentry.")
+        
+        class Mother:
+            def skill_mother(self):
+                print("Mother is good at painting.")
+        
+        class Child(Father, Mother):
+            def skill_child(self):
+                print("Child is good at programming.")
 
-class Mother:
-    def skill_mother(self):
-        print("Mother is good at painting.")
-
-class Child(Father, Mother):
-    def skill_child(self):
-        print("Child is good at programming.")
-
-# Creating object
-child = Child()
-child.skill_father()  # Output: Father is good at carpentry.
-child.skill_mother()  # Output: Mother is good at painting.
-child.skill_child()   # Output: Child is good at programming.
-
-
+        # Creating object
+        child = Child()
+        child.skill_father()  # Output: Father is good at carpentry.
+        child.skill_mother()  # Output: Mother is good at painting.
+        child.skill_child()   # Output: Child is good at programming.
+        
+        
 
 
 
@@ -233,24 +233,24 @@ child.skill_child()   # Output: Child is good at programming.
 - A child class inherits from another child class.
 
 
-class Grandparent:
-    def family_name(self):
-        print("Family name is Smith.")
-
-class Parent(Grandparent):
-    def greet(self):
-        print("Hello from the Parent class!")
-
-class Child(Parent):
-    def display(self):
-        print("This is the Child class.")
-
-# Creating object
-child = Child()
-child.family_name()  # Output: Family name is Smith.
-child.greet()        # Output: Hello from the Parent class!
-child.display()      # Output: This is the Child class.
-
+        class Grandparent:
+            def family_name(self):
+                print("Family name is Smith.")
+        
+        class Parent(Grandparent):
+            def greet(self):
+                print("Hello from the Parent class!")
+        
+        class Child(Parent):
+            def display(self):
+                print("This is the Child class.")
+        
+        # Creating object
+        child = Child()
+        child.family_name()  # Output: Family name is Smith.
+        child.greet()        # Output: Hello from the Parent class!
+        child.display()      # Output: This is the Child class.
+        
 
 
 
@@ -258,27 +258,27 @@ child.display()      # Output: This is the Child class.
 - Multiple child classes inherit from one parent class.
 
 
-class Parent:
-    def greet(self):
-        print("Hello from the Parent class!")
+        class Parent:
+            def greet(self):
+                print("Hello from the Parent class!")
+        
+        class Child1(Parent):
+            def display_child1(self):
+                print("This is Child1.")
+        
+        class Child2(Parent):
+            def display_child2(self):
+                print("This is Child2.")
 
-class Child1(Parent):
-    def display_child1(self):
-        print("This is Child1.")
-
-class Child2(Parent):
-    def display_child2(self):
-        print("This is Child2.")
-
-# Creating objects
-child1 = Child1()
-child1.greet()         # Output: Hello from the Parent class!
-child1.display_child1()  # Output: This is Child1.
-
-child2 = Child2()
-child2.greet()         # Output: Hello from the Parent class!
-child2.display_child2()  # Output: This is Child2.
-
+        # Creating objects
+        child1 = Child1()
+        child1.greet()         # Output: Hello from the Parent class!
+        child1.display_child1()  # Output: This is Child1.
+        
+        child2 = Child2()
+        child2.greet()         # Output: Hello from the Parent class!
+        child2.display_child2()  # Output: This is Child2.
+        
 
 
 
@@ -291,40 +291,40 @@ child2.display_child2()  # Output: This is Child2.
 - Child classes can override methods from the parent class.
 
 
-class Parent:
-    def greet(self):
-        print("Hello from the Parent class!")
-
-class Child(Parent):
-    def greet(self):
-        print("Hello from the Child class!")  # Overriding greet method
-
-# Creating object
-child = Child()
-child.greet()  # Output: Hello from the Child class!
-
-
+        class Parent:
+            def greet(self):
+                print("Hello from the Parent class!")
+        
+        class Child(Parent):
+            def greet(self):
+                print("Hello from the Child class!")  # Overriding greet method
+        
+        # Creating object
+        child = Child()
+        child.greet()  # Output: Hello from the Child class!
+        
+        
 
 ### Using super() to Access Parent Methods -
 - The super() function is used to call a method from the parent class.
 
 
-class Parent:
-    def greet(self):
-        print("Hello from the Parent class!")
-
-class Child(Parent):
-    def greet(self):
-        super().greet()  # Call the parent class's greet method
-        print("Hello from the Child class!")
-
-# Creating object
-child = Child()
-child.greet()
-# Output:
-# Hello from the Parent class!
-# Hello from the Child class!
-
+        class Parent:
+            def greet(self):
+                print("Hello from the Parent class!")
+        
+        class Child(Parent):
+            def greet(self):
+                super().greet()  # Call the parent class's greet method
+                print("Hello from the Child class!")
+        
+        # Creating object
+        child = Child()
+        child.greet()
+        # Output:
+        # Hello from the Parent class!
+        # Hello from the Child class!
+        
 
 
 
@@ -343,32 +343,32 @@ child.greet()
 - Overriding is possible only in a subclass that inherits from a parent class.
 
 
-# Parent class
-class Animal:
-    def sound(self):
-        return "Some generic sound"
-
-# Subclass overriding the parent method
-class Dog(Animal):
-    def sound(self):
-        return "Woof!"
-
-class Cat(Animal):
-    def sound(self):
-        return "Meow!"
-
-# Using the overridden methods
-animal = Animal()
-dog = Dog()
-cat = Cat()
-
-print(animal.sound())  # Output: Some generic sound
-print(dog.sound())     # Output: Woof!
-print(cat.sound())     # Output: Meow!
-
-
-
-
+        # Parent class
+        class Animal:
+            def sound(self):
+                return "Some generic sound"
+        
+        # Subclass overriding the parent method
+        class Dog(Animal):
+            def sound(self):
+                return "Woof!"
+        
+        class Cat(Animal):
+            def sound(self):
+                return "Meow!"
+        
+        # Using the overridden methods
+        animal = Animal()
+        dog = Dog()
+        cat = Cat()
+        
+        print(animal.sound())  # Output: Some generic sound
+        print(dog.sound())     # Output: Woof!
+        print(cat.sound())     # Output: Meow!
+        
+        
+        
+        
 
 
 
