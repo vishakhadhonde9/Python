@@ -43,4 +43,7 @@ connection.close()
 
 
 - The mysql.connector.connect() function establishes a connection to your MySQL database.
-- 
+- The cursor is an object that allows you to interact with the MySQL database through Python. It is created from the connection object.
+- Once the cursor is created, you can use it to send SQL commands to the database.
+- VALUES (%s, %s): Placeholder syntax for inserting values securely.
+%s is a placeholder for the actual data.
