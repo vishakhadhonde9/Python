@@ -14,31 +14,36 @@
 
 
 
-import mysql.connector
 
-# Connect to MySQL database
-connection = mysql.connector.connect(
-    host="localhost",
-    user="your_username",
-    password="your_password",
-    database="your_database"
-)
 
-cursor = connection.cursor()
+            import mysql.connector
+            
+            # Connect to MySQL database
+            connection = mysql.connector.connect(
+                host="localhost",
+                user="your_username",
+                password="your_password",
+                database="your_database"
+            )
 
-# Create a table
-cursor.execute("CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT)")
+            cursor = connection.cursor()
+            
+            # Create a table
+            cursor.execute("CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT)")
+            
+            # Insert data
+            cursor.execute("INSERT INTO users (name, age) VALUES (%s, %s)", ("Bob", 25))
+            
+            # Fetch data
+            cursor.execute("SELECT * FROM users")
+            print(cursor.fetchall())
+            
+            # Commit changes and close
+            connection.commit()
+            connection.close()
 
-# Insert data
-cursor.execute("INSERT INTO users (name, age) VALUES (%s, %s)", ("Bob", 25))
 
-# Fetch data
-cursor.execute("SELECT * FROM users")
-print(cursor.fetchall())
 
-# Commit changes and close
-connection.commit()
-connection.close()
 
 
 
