@@ -1,3 +1,26 @@
+# Variable -
+- A variable in Python is a name that stores a value in memory.
+
+        Variable Name   =   Value
+              x         =    10
+
+## Rules for Variables in Python (List Only)
+- Must start with a letter (a–z, A–Z) or underscore (_).
+- Cannot start with a number.
+- Can contain letters, numbers, and underscores only.
+- Cannot contain special characters (@, #, $, %, etc.).
+- Cannot use Python keywords as variable names.
+- Variable names are case-sensitive.
+- No spaces are allowed in variable names.
+
+## Access the value of variable
+
+        print(var_name)
+
+## Built-in Functions (Related to Variables):
+- type():  To check the type of the variable
+- id():  	To get the address of the variable
+
 # Data Types -
 - It is defined that what type of values that variable can contains.
 - In python we have 8 types of datatypes as shown below:
