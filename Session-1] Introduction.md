@@ -11,6 +11,7 @@
 - Python is a high-level language like other high-level language such as Java, C++, PHP, Ruby, Basic and Perl.
 - Python is an object-oriented programming language.
 - The CPU understands a language which is called as Machine Language. Machine language is very complex and very troublesome to write because it is represented all in zero's and one's. The actual hardware inside CPU does not understand any of these high-level languages.
+
 # Scripting -
 - Scripting language is a programming language used to automate tasks, control software, or connect different systems together.
 - Scripts are ideal for automating repetitive and time-consuming tasks.
