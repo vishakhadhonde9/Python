@@ -22,6 +22,9 @@
 | `**`         | Exponentiation  | `x ** y`        |
 | `//`         | Floor division  | `x // y`        |
 
+- For modulus, Python uses this formula:
+
+        a % b = a - (a // b) * b
 
 # 2. Comparison (Relational) Operators -
 - These operators are used to compare two values or variables.
